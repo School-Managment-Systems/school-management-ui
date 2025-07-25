@@ -7,7 +7,7 @@ import { UserResponse } from '../models/user.model';
   providedIn: 'root'
 })
 export class ProfileService {
-private baseUrl = 'http://localhost:8080/api/users/me';
+private baseUrl = 'https://school-managment-a7daa0789071.herokuapp.com/api/users/me';
 
   constructor(private http: HttpClient) {}
 
