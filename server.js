@@ -3,11 +3,11 @@ const path = require('path');
 const app = express();
 
 // Serve static files from the Angular app's dist folder
-app.use(express.static(path.join(__dirname, 'dist/student-managment-ui/browser')));
+app.use(express.static(path.join(__dirname, 'dist/school-management-ui/browser')));
 
 // Handle Angular routing: Return index.html for all unmatched routes
 app.get('/*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'dist/student-managment-ui/browser/index.html'));
+  res.sendFile(path.join(__dirname, 'dist/school-management-ui/browser/index.html'));
 });
 
 // Start the app by listening on the default Heroku port or port 8080
