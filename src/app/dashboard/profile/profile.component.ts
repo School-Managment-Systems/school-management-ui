@@ -11,7 +11,7 @@ import { ProfileService } from '../../services/profile.service';
 })
 export class ProfileComponent {
  
-user: UserResponse | null = null;
+user: UserResponse | null = null; 
 
 constructor(private authService: AuthService,private profileService:ProfileService) {}
 
