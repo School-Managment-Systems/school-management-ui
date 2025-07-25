@@ -7,7 +7,7 @@ import {jwtDecode} from 'jwt-decode';
   providedIn: 'root'
 })
 export class AuthService {
-  private baseUrl = 'http://localhost:8080/api/auth';
+  private baseUrl = 'https://school-managment-a7daa0789071.herokuapp.com/api/auth';
 
   constructor(private http: HttpClient) {}
 
