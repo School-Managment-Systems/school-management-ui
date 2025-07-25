@@ -9,8 +9,8 @@ import { RegisterRequest } from '../models/userRequest.model';
   providedIn: 'root'
 })
 export class UserService {
-  private apiUrl = 'http://localhost:8080/api/users';
-  private apiUrl1 = 'http://localhost:8080/api/auth'; // ✅ Update this with your backend endpoint
+  private apiUrl = 'https://school-managment-a7daa0789071.herokuapp.com/api/users';
+  private apiUrl1 = 'https://school-managment-a7daa0789071.herokuapp.com/api/auth'; // ✅ Update this with your backend endpoint
 
   constructor(private http: HttpClient) {}
 
