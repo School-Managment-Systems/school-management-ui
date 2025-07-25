@@ -33,7 +33,7 @@ export class LoginComponent {
 
     const loginData = this.loginForm.value;
 
-    this.http.post<any>('http://localhost:8080/api/auth/login', loginData).subscribe({
+    this.http.post<any>('https://school-managment-a7daa0789071.herokuapp.com/api/auth/login', loginData).subscribe({
       
       next: (response) => {
         // Assume response contains a token
